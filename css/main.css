@@ -60,7 +60,7 @@ a {
 }
 
 @media screen and (min-width: 480px) {
-  .container {
+  .container .container.adaptive {
     max-width: 480px;
   }
 }
@@ -78,15 +78,15 @@ a {
 }
 
 .container.adaptive {
-  min-width: 480px;
+  max-width: 320px;
 }
 
 .container.adaptive {
-  min-width: 768px;
+  max-width: 767px;
 }
 
 .container.adaptive {
-  min-width: 1200px;
+  max-width: 1200px;
 }
 
 /*Button*/
@@ -599,6 +599,7 @@ header {
   .feature-list {
     width: calc(100% / 2 - 30px);
     width: 354px;
+    flex-wrap: wrap;
   }
 }
 

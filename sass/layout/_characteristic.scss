@@ -19,9 +19,8 @@
 .feature-ul li {
   width: 100%;
   // width: 270px;
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+  // &:not(:last-child) {
+  //   margin-right: 30px;
 }
 
 .feature-list {
@@ -37,7 +36,6 @@
   @media screen and (min-width: 768px) {
     width: calc(100% / 2 - 30px);
     width: 354px;
-    flex-wrap: wrap;
   }
   @media screen and (min-width: 1200px) {
     width: calc(100% / 4 - 30px);
@@ -45,21 +43,20 @@
   }
 }
 
-/*Цього немає в html, не знаю відкіля він*/
-// .feature-list :not(:first-child) {
-//   margin-bottom: 30px;
-// }
-
-// .feature-icon {
-// }
+.feature-icon {
+  position: absolute;
+}
 
 .feature .title {
-  // display: flex;
+  display: block;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.1;
+  line-height: 1.1px;
+  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  color: #212121;
   @media screen and (min-width: 768px) {
     display: flex;
   }
@@ -76,11 +73,13 @@
 }
 
 .subject {
-  display: flex;
   margin-top: 10px;
-  // margin-bottom: 30px;
   color: var(--paragraph-text-color);
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+}
+
+.subject:not(:last-child) {
+  margin-bottom: 30px;
 }

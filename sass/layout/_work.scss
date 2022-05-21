@@ -1,6 +1,17 @@
 /*----Чем мы занимаемся-----*/
 .work {
-  padding-bottom: 94px;
+  display: none;
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    display: flex;
+    padding-bottom: 94px;
+  }
 }
 
 .work-list {

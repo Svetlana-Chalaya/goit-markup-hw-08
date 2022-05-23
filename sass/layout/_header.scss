@@ -47,9 +47,20 @@ header {
 /*Site-nav Studio*/
 
 .site-nav {
-  display: flex;
-  & li:not(:last-child) {
-    margin-right: 50px;
+  display: none;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    display: flex;
+    & li:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    display: flex;
+    & li:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 
@@ -155,10 +166,22 @@ header {
 /*Contact-nav*/
 
 .contact-nav {
-  margin-left: auto;
-  display: flex;
-  & li:not(:last-child) {
-    margin-right: 50px;
+  display: none;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    margin-left: auto;
+    display: flex;
+    & li:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    margin-left: auto;
+    display: flex;
+    & li:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 

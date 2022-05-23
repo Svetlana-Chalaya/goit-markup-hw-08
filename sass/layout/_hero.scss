@@ -2,29 +2,57 @@
 .hero {
   background-color: #2f303a;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/Шапка.jpg);
+    url(../images/header.mob.jpg);
   background-repeat: no-repeat;
   width: 100%;
   // max-width: 1600px;
   margin: 0 auto;
+  background-position: center;
   background-size: cover;
+  padding: 118px 60px 118px 60px;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding: 118px 204px 118px 204px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/header.tab.jpg);
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    padding: 200px 452px 200px 452px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/Шапка.jpg);
+    width: 1600px;
+  }
 }
 
 .hero-title {
   margin: 0 auto;
   color: var(--primary-text-color);
-  width: 696px;
+  width: 360px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
+  font-size: 26px;
+  line-height: 1.6px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   background-repeat: no-repeat;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.4;
+  }
 }

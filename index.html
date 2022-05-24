@@ -144,6 +144,7 @@
             <li>
               <div class="work-top-wrap">
                 <img
+                  srcset="./images/box1.jpg 1x, ./images/box1.jpg 2x"
                   src="./images/box1.jpg"
                   alt="Компьютер"
                   width="370"
@@ -155,6 +156,7 @@
             <li>
               <div class="work-top-wrap">
                 <img
+                  srcset="./images/box2.jpg 1x, ./images/box2.jpg 2x"
                   src="./images/box2.jpg"
                   alt="Телефон"
                   width="370"
@@ -166,8 +168,9 @@
             <li>
               <div class="work-top-wrap">
                 <img
+                  srcset="./images/box3.jpg 1x, ./images/box3.jpg 2x"
                   src="./images/box3.jpg"
-                  alt="Планшет"
+                  alt="Телефон"
                   width="370"
                   height="294"
                 />
@@ -185,12 +188,35 @@
 
           <ul class="content-list-photo work-img">
             <li class="content-photo cart-bg">
-              <img
-                src="./images/pfoto1.jpg"
-                alt="Product Designer"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/pfoto1-desk-1x.jpg 1x,
+                    ./images/pfoto1-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/pfoto1-tab-1x.jpg 1x,
+                    ./images/pfoto1-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/pfoto1-mob-1x.jpg 1x,
+                    ./images/pfoto1-mob-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./images/pfoto1.jpg"
+                  alt="Product Designer"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="title-team">
                 <h3 class="content-title title">Игорь Демьяненко</h3>
                 <p class="lead">Product Designer</p>
@@ -234,12 +260,35 @@
             </li>
 
             <li class="content-photo cart-bg">
-              <img
-                src="./images/pfoto2.jpg"
-                alt="Frontend Developer"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/pfoto2-desk-1x.jpg 1x,
+                    ./images/pfoto2-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/pfoto2-tab-1x.jpg 1x,
+                    ./images/pfoto2-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/pfoto2-mob-1x.jpg 1x,
+                    ./images/pfoto2-mob-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./images/pfoto2.jpg"
+                  alt="Product Designer"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="title-team">
                 <h3 class="content-title title">Ольга Репина</h3>
                 <p class="lead">Frontend Developer</p>
@@ -283,12 +332,35 @@
             </li>
 
             <li class="content-photo cart-bg">
-              <img
-                src="./images/pfoto3.jpg"
-                alt="Marketing"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/pfoto3-desk-1x.jpg 1x,
+                    ./images/pfoto3-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/pfoto3-tab-1x.jpg 1x,
+                    ./images/pfoto3-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/pfoto3-mob-1x.jpg 1x,
+                    ./images/pfoto3-mob-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./images/pfoto3.jpg"
+                  alt="Product Designer"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="title-team">
                 <h3 class="content-title title">Николай Тарасов</h3>
                 <p class="lead">Marketing</p>
@@ -332,12 +404,35 @@
             </li>
 
             <li class="content-photo cart-bg">
-              <img
-                src="./images/pfoto4.jpg"
-                alt="UI Designer"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/pfoto4-desk-1x.jpg 1x,
+                    ./images/pfoto4-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/pfoto4-tab-1x.jpg 1x,
+                    ./images/pfoto4-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/pfoto4-mob-1x.jpg 1x,
+                    ./images/pfoto4-mob-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./images/pfoto4.jpg"
+                  alt="Product Designer"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="title-team">
                 <h3 class="content-title title">Михаил Ермаков</h3>
                 <p class="lead">UI Designer</p>
@@ -436,7 +531,7 @@
     </main>
 
     <!--Футер-->
-    <!-- <footer>
+    <footer>
       <div class="container footer-container">
         <div class="footer-box-hero">
           <a href="./portfolio.html" class="logo-footer"
@@ -519,7 +614,7 @@
           </div>
         </form>
       </div>
-    </footer> -->
+    </footer>
 
     <!--------BACKDROP MODAL----------->
 

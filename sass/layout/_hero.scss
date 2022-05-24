@@ -7,6 +7,13 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/header.mob.jpg);
+  background-color: #2f303a;
+  text-align: center;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/header.mobx.jpg);
   background-repeat: no-repeat;
   width: 100%;
   // max-width: 1600px;
@@ -21,7 +28,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/header.tab.jpg);
+      url(../images/Header.tab.jpg);
   }
   @media screen and (min-width: 1200px) {
     max-width: 1200px;

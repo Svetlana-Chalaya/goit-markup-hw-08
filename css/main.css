@@ -570,6 +570,36 @@ header {
 }
 
 /*Button header open-close MOB-MENU*/
+.mob-menu {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.mob-menu .container {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    width: 354px;
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mob-menu {
+    width: 270px;
+    display: none;
+  }
+}
+
 .header-button {
   display: block;
   margin-left: auto;
@@ -591,17 +621,14 @@ header {
   }
 }
 
-.header-btn-close {
-  position: absolute;
-  left: 20%;
-  right: 20%;
-  top: 30%;
-  bottom: 30%;
-  background: #000000;
+.header-btn:hover, .header-btn:focus {
+  color: var(--accent-color);
 }
 
-.header-btn-close:hover, .header-btn-close:focus {
-  color: var(--accent-color);
+.header-button-close {
+  border: none;
+  background-color: #ffffff;
+  margin-left: auto;
 }
 
 .header-button-close {
@@ -610,24 +637,16 @@ header {
   margin-bottom: 30px;
 }
 
-.header-button-close:hover, .header-button-close:focus {
+.header-btn-close {
+  fill: #000000;
+}
+
+.header-btn-close:hover, .header-btn-close:focus {
   color: var(--accent-color);
 }
 
-.mob-menu {
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #ffffff;
-  width: 100vw;
-  height: 100vh;
-  padding-top: 48px;
-  padding-bottom: 48px;
-}
-
-.mob-menu .container {
-  display: block;
+.mob-site-nav li:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .mob-site-nav__current {
@@ -637,7 +656,6 @@ header {
   text-align: center;
   letter-spacing: 0.02em;
   color: #212121;
-  margin-bottom: 32px;
 }
 
 .mob-site-nav__portfolio {
@@ -672,9 +690,25 @@ header {
   line-height: 28px;
   letter-spacing: 0.02em;
   color: #757575;
+  display: block;
+  margin-top: 32px;
+}
+
+.mob-title-soc-list {
+  margin-top: 64px;
 }
 
 .mob-title-soc-item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+
+.mob-title-soc-link {
+  display: flex;
+  flex-direction: column;
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
@@ -957,12 +991,17 @@ header {
   margin-bottom: -30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .content-list-photo {
+    width: 270px;
+  }
+}
+
 .content-photo:not(:last-child) {
   margin-right: 30px;
 }
 
 .content-list-photo li {
-  width: 450px;
   margin-right: 30px;
   margin-bottom: 30px;
 }

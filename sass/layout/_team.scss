@@ -51,6 +51,9 @@
   flex-wrap: wrap;
   margin-right: -30px;
   margin-bottom: -30px;
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 
 .content-photo:not(:last-child) {
@@ -58,7 +61,6 @@
 }
 
 .content-list-photo li {
-  width: 450px;
   margin-right: 30px;
   margin-bottom: 30px;
   @media screen and (min-width: 768px) {

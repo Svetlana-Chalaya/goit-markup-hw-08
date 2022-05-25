@@ -248,6 +248,29 @@ header {
 
 /*Button header open-close MOB-MENU*/
 
+.mob-menu {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  .container {
+    display: block;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    display: none;
+  }
+}
+
 .header-button {
   display: block;
   margin-left: auto;
@@ -263,13 +286,7 @@ header {
   }
 }
 
-.header-btn-close {
-  position: absolute;
-  left: 20%;
-  right: 20%;
-  top: 30%;
-  bottom: 30%;
-  background: #000000;
+.header-btn {
   &:hover,
   &:focus {
     color: var(--accent-color);
@@ -277,31 +294,29 @@ header {
 }
 
 .header-button-close {
+  border: none;
+  background-color: #ffffff;
+  margin-left: auto;
+}
+
+.header-button-close {
   display: block;
   margin-left: auto;
   margin-bottom: 30px;
+}
+
+.header-btn-close {
+  fill: #000000;
   &:hover,
   &:focus {
     color: var(--accent-color);
   }
 }
 
-.mob-menu {
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #ffffff;
-  width: 100vw;
-  height: 100vh;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  .container {
-    display: block;
+.mob-site-nav li {
+  &:not(:last-child) {
+    margin-bottom: 32px;
   }
-}
-
-.mob-site-nav {
 }
 .mob-site-nav__current {
   font-weight: 500;
@@ -309,9 +324,7 @@ header {
   line-height: 1.2px;
   text-align: center;
   letter-spacing: 0.02em;
-
   color: #212121;
-  margin-bottom: 32px;
 }
 .mob-site-nav__portfolio {
   font-weight: 500;
@@ -319,7 +332,6 @@ header {
   line-height: 1.2px;
   text-align: center;
   letter-spacing: 0.02em;
-
   color: #212121;
 }
 .mob-site-nav__contact {
@@ -352,11 +364,14 @@ header {
   line-height: 28px;
   letter-spacing: 0.02em;
   color: #757575;
+  display: block;
+  margin-top: 32px;
 }
 
 .mob-phone-icon {
 }
 .mob-title-soc-list {
+  margin-top: 64px;
 }
 .mob-title-soc-item {
   font-weight: 500;
@@ -366,6 +381,13 @@ header {
   color: #2196f3;
 }
 .mob-title-soc-link {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }
 .mob-title-soc-icon {
 }

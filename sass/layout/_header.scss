@@ -245,3 +245,85 @@ header {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+
+/*Button header open-close MOB-MENU*/
+
+.header-button {
+  display: block;
+  margin-left: auto;
+  border: none;
+  background-color: #ffffff;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    display: none;
+  }
+}
+
+.header-btn-close {
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  top: 30%;
+  bottom: 30%;
+  background: #000000;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.header-button-close {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 30px;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.mob-menu {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  .container {
+    display: block;
+  }
+}
+
+.mob-site-nav {
+}
+.mob-site-nav__current {
+}
+.mob-site-nav__portfolio {
+}
+.mob-site-nav__contact {
+}
+.mob-contact-nav {
+}
+.mob-mailto {
+}
+.mob-mailto-icon {
+}
+.mob-phone {
+}
+.mob-phone-icon {
+}
+.mob-title-soc-list {
+}
+.mob-title-soc-item {
+}
+.mob-title-soc-link {
+}
+.mob-title-soc-icon {
+}

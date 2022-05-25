@@ -304,24 +304,66 @@ header {
 .mob-site-nav {
 }
 .mob-site-nav__current {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2px;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #212121;
+  margin-bottom: 32px;
 }
 .mob-site-nav__portfolio {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2px;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #212121;
 }
 .mob-site-nav__contact {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2px;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #212121;
 }
 .mob-contact-nav {
 }
-.mob-mailto {
-}
+
 .mob-mailto-icon {
 }
 .mob-phone {
+  font-size: 34px;
+  line-height: 40px;
+  /* identical to box height */
+
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
 }
+
+.mob-mailto {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
 .mob-phone-icon {
 }
 .mob-title-soc-list {
 }
 .mob-title-soc-item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }
 .mob-title-soc-link {
 }

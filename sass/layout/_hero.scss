@@ -26,7 +26,6 @@
   padding: 118px 0;
   @media screen and (min-width: 768px) {
     max-width: 768px;
-    padding: 118px 204px 118px 204px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -69,7 +68,7 @@
 .hero-title {
   margin: 0 auto;
   color: var(--primary-text-color);
-  width: 360px;
+  // width: 360px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.6px;

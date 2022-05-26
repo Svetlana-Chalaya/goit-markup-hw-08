@@ -68,9 +68,10 @@
   flex-wrap: wrap;
 }
 
-.img-link {
+.img-link li {
   display: flex;
-  width: 450px;
+  flex-direction: column;
+
   margin-right: 15px;
   margin-bottom: 15px;
   @media screen and (min-width: 768px) {
@@ -141,6 +142,7 @@
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+  flex-grow: 1;
 }
 
 .title-second {

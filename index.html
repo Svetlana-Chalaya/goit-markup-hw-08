@@ -72,29 +72,34 @@
 
       <!--Form for header-->
 
-      <div class="mob-menu" data-modal>
+      <div class="mob-menu is-hidden">
         <div class="container">
-          <button type="button" class="header-button-close" data-modal-close>
-            <svg class="header-btn-close" width="40" height="40">
-              <use href="./images/symbol-defs.svg#icon-menu-close-header"></use>
-            </svg>
-          </button>
-          <ul class="mob-site-nav">
-            <li>
-              <a href="./portfolio.html" class="mob-site-nav__current"
-                >Студия</a
-              >
-            </li>
-            <li>
-              <a href="./portfolio.html" class="mob-site-nav__portfolio"
-                >Портфолио</a
-              >
-            </li>
-            <li>
-              <a href="" class="mob-site-nav__contact">Контакты</a>
-            </li>
-          </ul>
+          <div class="mob-menu-top">
+            <button type="button" class="header-button-close" data-modal-close>
+              <svg class="header-btn-close" width="40" height="40">
+                <use
+                  href="./images/symbol-defs.svg#icon-menu-close-header"
+                ></use>
+              </svg>
+            </button>
+            <ul class="mob-site-nav">
+              <li>
+                <a href="./portfolio.html" class="mob-site-nav__current"
+                  >Студия</a
+                >
+              </li>
+              <li>
+                <a href="./portfolio.html" class="mob-site-nav__portfolio"
+                  >Портфолио</a
+                >
+              </li>
+              <li>
+                <a href="" class="mob-site-nav__contact">Контакты</a>
+              </li>
+            </ul>
+          </div>
 
+          <div class="mob-menu-nav"></div>
           <ul class="mob-contact-nav">
             <li>
               <a href="tel:+380961111111" class="mob-phone"
@@ -789,5 +794,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

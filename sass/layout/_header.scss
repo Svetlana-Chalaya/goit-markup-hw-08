@@ -16,6 +16,7 @@ header {
   display: flex;
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
 }
 
 .logo {
@@ -171,6 +172,7 @@ header {
     max-width: 768px;
     margin-left: auto;
     display: flex;
+    flex-wrap: wrap;
     & li:not(:last-child) {
       margin-right: 50px;
     }
@@ -259,7 +261,11 @@ header {
   padding-top: 48px;
   padding-bottom: 48px;
   .container {
-    display: block;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
   }
   @media screen and (min-width: 768px) {
     width: 354px;
@@ -290,13 +296,14 @@ header {
   &:hover,
   &:focus {
     color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
 .header-button-close {
   border: none;
   background-color: #ffffff;
-  margin-left: auto;
+  // margin-left: auto;
 }
 
 .header-button-close {
@@ -307,9 +314,11 @@ header {
 
 .header-btn-close {
   fill: #000000;
+
   &:hover,
   &:focus {
     color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -325,6 +334,10 @@ header {
   text-align: center;
   letter-spacing: 0.02em;
   color: #212121;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 .mob-site-nav__portfolio {
   font-weight: 500;
@@ -333,6 +346,10 @@ header {
   text-align: center;
   letter-spacing: 0.02em;
   color: #212121;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 .mob-site-nav__contact {
   font-weight: 500;
@@ -340,8 +357,11 @@ header {
   line-height: 1.2px;
   text-align: center;
   letter-spacing: 0.02em;
-
   color: #212121;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 .mob-contact-nav {
 }
@@ -350,18 +370,15 @@ header {
 }
 .mob-phone {
   font-size: 34px;
-  line-height: 40px;
-  /* identical to box height */
-
+  line-height: 1.17px;
   letter-spacing: 0.02em;
-
   color: #2196f3;
 }
 
 .mob-mailto {
   font-weight: 500;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.7px;
   letter-spacing: 0.02em;
   color: #757575;
   display: block;
@@ -393,14 +410,19 @@ header {
 
 .mob-title-soc-link {
   position: relative;
+  padding-right: 10px;
 }
 
 .mob-title-soc-link::after {
   content: "";
-  display: block;
   position: absolute;
   width: 22px;
   height: 0px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);
+  left: 0;
+}
+
+.no-scroll {
+  overflow: hidden;
 }

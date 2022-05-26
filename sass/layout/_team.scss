@@ -26,15 +26,6 @@
   letter-spacing: 0.03em;
 }
 
-.title-team {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.lead-list {
-  padding-bottom: 30px;
-}
-
 .lead {
   margin: 0;
   margin-bottom: 16px;
@@ -47,24 +38,28 @@
 }
 
 .content-list-photo {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
+  @media screen and (min-width: 768px) {
+    margin-top: -30px;
+    margin-left: -30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
   @media screen and (min-width: 1200px) {
-    width: 270px;
   }
 }
 
 .content-photo:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .content-list-photo li {
-  margin-right: 30px;
-  margin-bottom: 30px;
   @media screen and (min-width: 768px) {
     width: 354px;
+    margin-top: 30px;
+    margin-left: 30px;
   }
   @media screen and (min-width: 1200px) {
     width: 270px;

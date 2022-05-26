@@ -61,19 +61,19 @@ a {
 
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    width: 1200px;
   }
 }
 
@@ -338,16 +338,22 @@ header {
   display: flex;
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 100%;
 }
 
-.logo {
-  margin-right: 93px;
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+  }
 }
 
 .logo__secondary {
   color: #000000;
-  width: 145px;
   font-family: Raleway;
   font-style: normal;
   font-weight: 700;
@@ -358,7 +364,6 @@ header {
 
 .logo__text {
   color: var(--accent-color);
-  width: 145px;
   font-family: Raleway;
   font-style: normal;
   font-weight: 700;
@@ -374,19 +379,14 @@ header {
 
 @media screen and (min-width: 768px) {
   .site-nav {
-    max-width: 768px;
     display: flex;
   }
   .site-nav li:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 30px;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .site-nav {
-    max-width: 1200px;
-    display: flex;
-  }
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .site-nav li:not(:last-child) {
     margin-right: 50px;
   }
@@ -458,7 +458,6 @@ header {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--title-text-color);
-  width: 68px;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -492,24 +491,24 @@ header {
 
 @media screen and (min-width: 768px) {
   .contact-nav {
-    max-width: 768px;
+    display: block;
     margin-left: auto;
-    display: flex;
-    flex-wrap: wrap;
   }
   .contact-nav li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .contact-nav li:not(:last-child) {
+    margin-bottom: 0;
     margin-right: 50px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .contact-nav {
-    max-width: 1200px;
-    margin-left: auto;
     display: flex;
-  }
-  .contact-nav li:not(:last-child) {
-    margin-right: 50px;
   }
 }
 
@@ -521,14 +520,19 @@ header {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
   fill: #757575;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mailto:hover, .mailto:focus {
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .mailto {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .mailto-icon {
@@ -550,14 +554,19 @@ header {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
   fill: #757575;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .phone:hover, .phone:focus {
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .phone {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .phone-icon {
@@ -762,7 +771,7 @@ header {
   margin: 0 auto;
   background-position: center;
   background-size: cover;
-  padding: 118px 60px 118px 60px;
+  padding: 118px 0;
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -787,8 +796,8 @@ header {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1200px;
-    padding: 200px 452px 200px 452px;
+    max-width: 1600px;
+    padding: 200px 0;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Шапка.jpg);
   }
 }
@@ -809,18 +818,10 @@ header {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  background-repeat: no-repeat;
-}
-
-@media screen and (min-width: 768px) {
-  .hero-title {
-    max-width: 768px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
   .hero-title {
-    max-width: 1200px;
     width: 696px;
     font-size: 44px;
     line-height: 1.4;
@@ -1001,15 +1002,6 @@ header {
   letter-spacing: 0.03em;
 }
 
-.title-team {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.lead-list {
-  padding-bottom: 30px;
-}
-
 .lead {
   margin: 0;
   margin-bottom: 16px;
@@ -1021,31 +1013,30 @@ header {
   letter-spacing: 0.03em;
 }
 
-.content-list-photo {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
-}
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .content-list-photo {
-    width: 270px;
+    margin-top: -30px;
+    margin-left: -30px;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
 .content-photo:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
-.content-list-photo li {
-  margin-right: 30px;
-  margin-bottom: 30px;
+@media screen and (min-width: 768px) {
+  .content-photo:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .content-list-photo li {
     width: 354px;
+    margin-top: 30px;
+    margin-left: 30px;
   }
 }
 

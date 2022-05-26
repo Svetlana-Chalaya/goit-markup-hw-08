@@ -371,6 +371,7 @@ header {
 .mob-phone-icon {
 }
 .mob-title-soc-list {
+  display: flex;
   margin-top: 64px;
 }
 .mob-title-soc-item {
@@ -385,9 +386,21 @@ header {
   flex-direction: column;
   font-weight: 500;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.2px;
   letter-spacing: 0.02em;
   color: #2196f3;
 }
-.mob-title-soc-icon {
+
+.mob-title-soc-link {
+  position: relative;
+}
+
+.mob-title-soc-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 22px;
+  height: 0px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
 }

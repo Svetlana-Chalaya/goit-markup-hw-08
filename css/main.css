@@ -1501,10 +1501,13 @@ footer {
 
 /*-----Список фото---*/
 /*---img-link----*/
-.img-link {
-  margin-top: 34px;
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (min-width: 768px) {
+  .img-link {
+    margin-top: -30px;
+    margin-left: -30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .img-link li {
@@ -1516,13 +1519,15 @@ footer {
 
 @media screen and (min-width: 768px) {
   .img-link li {
-    width: calc(100 / 2)-30px;
+    width: 354px;
+    margin-top: 30px;
+    margin-left: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .img-link li {
-    width: 370px;
+    width: 270px;
   }
 }
 

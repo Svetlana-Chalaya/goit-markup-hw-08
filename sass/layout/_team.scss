@@ -55,14 +55,15 @@
   }
 }
 
-.content-list-photo li {
+.content-photo {
   @media screen and (min-width: 768px) {
-    width: 354px;
     margin-top: 30px;
     margin-left: 30px;
   }
   @media screen and (min-width: 1200px) {
     width: 270px;
+    margin-top: 30px;
+    margin-left: 30px;
   }
 }
 

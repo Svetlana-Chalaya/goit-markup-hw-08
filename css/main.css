@@ -346,6 +346,12 @@ header {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 1200px) {
+  .nav {
+    width: auto;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .logo {
     margin-right: 88px;
@@ -1208,14 +1214,22 @@ footer {
 @media screen and (min-width: 768px) {
   .footer-tab {
     display: flex;
+    justify-content: space-around;
     width: 100%;
-    margin-bottom: 0;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-tab {
+    width: auto;
   }
 }
 
 .footer-box-hero {
   text-align: center;
   justify-content: center;
+  margin-bottom: 60px;
 }
 
 .logo-footer {
